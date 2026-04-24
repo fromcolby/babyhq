@@ -1,0 +1,3618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>Baby HQ — Year One Guide</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍼</text></svg>">
+  <meta name="description" content="A month-by-month baby reference guide for the first year. Sleep schedules, feeding, milestones, play ideas, and things to know — backed by AAP, CDC, Huckleberry, and Taking Cara Babies.">
+  <meta property="og:title" content="Baby HQ — Year One Guide">
+  <meta property="og:description" content="A month-by-month baby reference guide for the first year. Sleep, feeding, milestones, and play — all in one place.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby HQ — Year One Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --cream: #FAF7F2;
+    --warm-white: #FFFDF9;
+    --sage: #8FA88A;
+    --sage-light: #C8D9C4;
+    --sage-pale: #EBF2E9;
+    --dusty-rose: #D4A49A;
+    --rose-pale: #F7EBE8;
+    --golden: #C9A96E;
+    --golden-pale: #FBF3E4;
+    --sky: #8AAFC0;
+    --sky-pale: #E8F2F7;
+    --lavender: #A699C0;
+    --lavender-pale: #EEE9F6;
+    --charcoal: #2C2C2C;
+    --mid-gray: #6B6B6B;
+    --light-gray: #B0B0B0;
+    --border: #E8E2D8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1.5px solid var(--border);
+    margin-bottom: 16px;
+  }
+  .header-left {}
+  .month-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 6px;
+  }
+  .header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #1A1A1A !important;
+    line-height: 1.1;
+  }
+  .header-title em {
+    font-style: italic;
+    color: var(--sage);
+  }
+  .header-subtitle {
+    font-size: 16px;
+    color: var(--mid-gray);
+    margin-top: 8px;
+    font-weight: 400;
+  }
+  .header-right {
+    text-align: right;
+  }
+  .baby-name {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--dusty-rose);
+    margin-bottom: 4px;
+  }
+  .header-date {
+    font-size: 16px;
+    color: var(--light-gray);
+    font-weight: 400;
+  }
+
+  .section-divider {
+    border: none;
+    border-top: 1.5px solid var(--border);
+    margin: 0 0 16px 0;
+  }
+  @media print {
+    .tab-bar, .jump-nav, .jump-nav-header, .print-btn, .section-divider, #welcome-banner { display: none !important; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    @page { size: letter portrait; margin: 0.85in 0.75in 0.75in 0.75in; }
+  }
+
+  /* QUICK STATS BAR */
+  .stats-label {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 10px;
+  }
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .stats-bar {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .play-grid {
+      grid-template-columns: 1fr;
+    }
+    .feeding-grid-2col {
+      grid-template-columns: 1fr !important;
+    }
+    .month-label {
+      display: none;
+    }
+    .header-title {
+      font-size: 28px;
+    }
+    .header-subtitle {
+      font-size: 13px;
+    }
+    .tab-content {
+      padding: 24px 16px 40px;
+    }
+    .card {
+      padding: 16px 14px;
+    }
+    .jump-nav {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .jump-nav::-webkit-scrollbar {
+      display: none;
+    }
+    .jump-nav a {
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+  }
+  .stat-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 14px;
+    text-align: center;
+  }
+  .stat-icon {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .stat-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--charcoal);
+    line-height: 1.2;
+  }
+  .stat-label {
+    font-size: 16px;
+    color: var(--mid-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin-top: 3px;
+  }
+
+  /* MAIN GRID */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  /* SECTION CARDS */
+  .card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px 22px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    border-radius: 18px 18px 0 0;
+  }
+  .card-sleep::before { background: var(--sky); }
+  .card-milestones::before { background: var(--sage); }
+  .card-play::before { background: var(--golden); }
+  .card-feeding::before { background: var(--dusty-rose); }
+  .card-toknow::before { background: var(--lavender); }
+  .card-heads-up::before { background: var(--dusty-rose); }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .card-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .icon-sleep { background: var(--sky-pale); }
+  .icon-milestones { background: var(--sage-pale); }
+  .icon-play { background: var(--golden-pale); }
+  .icon-feeding { background: var(--rose-pale); }
+  .icon-toknow { background: var(--lavender-pale); }
+  .icon-headsup { background: var(--rose-pale); }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid-gray);
+  }
+
+  /* SLEEP CARD */
+  .sleep-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .sleep-item {
+    background: var(--sky-pale);
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .sleep-item-label {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--charcoal);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .sleep-item-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--sky);
+  }
+  .sleep-item-note {
+    font-size: 16px;
+    color: var(--mid-gray);
+    margin-top: 2px;
+  }
+  .sleep-tip {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.55;
+    padding: 12px 14px;
+    background: var(--sky);
+    border-radius: 8px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .sleep-tip { background: #5C8CA3; color: #fff; }
+  }
+
+  /* MILESTONES RESPONSIVE COLUMNS */
+  .milestone-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 28px;
+  }
+  @media (max-width: 600px) {
+    .milestone-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    .play-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  /* MILESTONES CARD */
+  .milestone-category {
+    margin-bottom: 13px;
+  }
+  .milestone-category:last-child { margin-bottom: 0; }
+  .milestone-cat-label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sage);
+    margin-bottom: 6px;
+  }
+  .milestone-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .milestone-list li {
+    font-size: 16px;
+    color: var(--charcoal);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .milestone-list li::before {
+    content: '·';
+    position: absolute;
+    left: 3px;
+    color: var(--sage);
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .milestone-note {
+    font-size: 16px;
+    color: var(--light-gray);
+    font-style: italic;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  /* PLAY CARD */
+  .play-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .play-item {
+    background: var(--golden-pale);
+    border-radius: 10px;
+    padding: 11px 12px;
+  }
+  .play-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 3px;
+  }
+  .play-item-desc {
+    font-size: 16px;
+    color: var(--mid-gray);
+    line-height: 1.5;
+  }
+  .play-item-tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--golden);
+    margin-top: 5px;
+  }
+
+  /* FEEDING CARD */
+  .feeding-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .feeding-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 12px;
+    background: var(--rose-pale);
+    border-radius: 10px;
+  }
+  .feeding-item-icon {
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .feeding-item-text {}
+  .feeding-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 2px;
+  }
+  .feeding-item-desc {
+    font-size: 15px;
+    color: var(--mid-gray);
+    line-height: 1.55;
+  }
+
+  /* THINGS TO KNOW */
+  .toknow-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .toknow-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .toknow-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--lavender-pale);
+    border: 1.5px solid var(--lavender);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--lavender);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .toknow-text {}
+  .toknow-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 2px;
+  }
+  .toknow-desc {
+    font-size: 16px;
+    color: var(--mid-gray);
+    line-height: 1.55;
+  }
+
+  /* HEADS UP CARD */
+  .headsup-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .headsup-item {
+    background: var(--rose-pale);
+    border-radius: 10px;
+    padding: 13px 12px;
+  }
+  .headsup-emoji {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .headsup-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 4px;
+  }
+  .headsup-desc {
+    font-size: 16px;
+    color: var(--mid-gray);
+    line-height: 1.55;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-left {
+    font-size: 16px;
+    color: var(--light-gray);
+    line-height: 1.6;
+  }
+  .footer-right {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--sage);
+  }
+
+  /* SLEEP CUES BOX */
+  .cues-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .cue-pill {
+    background: var(--sky-pale);
+    border: 1px solid rgba(138,175,192,0.3);
+    border-radius: 20px;
+    padding: 4px 11px;
+    font-size: 13.5px;
+    color: var(--sky);
+    font-weight: 500;
+  }
+
+
+  /* JUMP NAV */
+  .jump-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  .jump-nav a {
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    color: var(--mid-gray);
+    background: var(--warm-white);
+    transition: all 0.15s;
+  }
+  .jump-nav a:hover {
+    border-color: var(--sage);
+    color: var(--sage);
+    background: var(--sage-pale);
+  }
+  @media print {
+    .jump-nav { display: none; }
+  }
+  @media print {
+    body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { padding: 16px; max-width: 100%; }
+    .stat-card, .card, .sleep-item, .play-item, .feeding-item, .headsup-item {
+      break-inside: avoid;
+    }
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+  }
+
+
+
+  /* TAB BAR */
+  .tab-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 16px 24px 16px;
+    border-bottom: 2px solid var(--border);
+    background: var(--cream);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .tab-bar.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  @media (min-width: 601px) {
+    .tab-bar.hidden {
+      transform: none;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  .tab-bar-label {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--light-gray);
+    margin-right: 4px;
+  }
+  .tab-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    background: var(--warm-white);
+    color: var(--mid-gray);
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tab-btn:hover {
+    border-color: var(--sage);
+    color: var(--sage);
+    background: var(--sage-pale);
+  }
+  .tab-btn.active {
+    background: var(--sage);
+    border-color: var(--sage);
+    color: white;
+  }
+  .tab-content {
+    padding: 40px 24px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  @media print {
+    .tab-bar { display: none; }
+    .tab-content { display: block !important; padding: 20px; }
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    .header-title { color: #E8E2D8 !important; font-weight: 700 !important; }
+    .header-subtitle { color: #B8B2A8 !important; }
+    .month-label { color: var(--sage) !important; }
+    .stats-label { color: var(--sage) !important; }
+    .footer-left { color: #A8A29A !important; }
+    .footer-left div { color: #C8D9C4 !important; }
+    .stat-label { color: #B8B2A8 !important; }
+    .stat-value { color: #7BA8BC !important; }
+    .card-title { color: #B8B2A8 !important; }
+  }
+
+
+  /* Offset for sticky tab bar on jump links */
+  [id^="m"][id*="-sleep"],
+  [id^="m"][id*="-feeding"],
+  [id^="m"][id*="-milestones"],
+  [id^="m"][id*="-play"],
+  [id^="m"][id*="-toknow"] {
+    scroll-margin-top: 90px;
+  }
+  @media (max-width: 600px) {
+    [id^="m"][id*="-sleep"],
+    [id^="m"][id*="-feeding"],
+    [id^="m"][id*="-milestones"],
+    [id^="m"][id*="-play"],
+    [id^="m"][id*="-toknow"] {
+      scroll-margin-top: 16px;
+    }
+  }
+
+  /* PRINT BUTTON - inline in header */
+  .print-btn {
+    background: var(--sage);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(143,168,138,0.3);
+    transition: background 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .print-btn:hover { background: var(--charcoal); }
+  @media (max-width: 600px) { .print-btn { display: none !important; } }
+  @media print { .print-btn { display: none; } }
+
+  /* NEW SLEEP CARD - bullet style */
+  .sleep-bullets {
+    margin: 0 0 16px 0;
+    padding: 0 0 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sleep-bullets li {
+    font-size: 15px;
+    color: var(--mid-gray);
+    line-height: 1.55;
+    padding-left: 4px;
+  }
+  .sleep-tip {
+    background: #EEF3F7;
+    border-left: 3px solid var(--dusty-blue);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: var(--charcoal);
+    line-height: 1.5;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- TAB BAR -->
+<div class="tab-bar">
+  <span class="tab-bar-label">Month</span>
+  <button class="tab-btn active" onclick="showMonth(1)" id="tab-1" data-month="1">1</button><button class="tab-btn" onclick="showMonth(2)" id="tab-2" data-month="2">2</button><button class="tab-btn" onclick="showMonth(3)" id="tab-3" data-month="3">3</button><button class="tab-btn" onclick="showMonth(4)" id="tab-4" data-month="4">4</button><button class="tab-btn" onclick="showMonth(5)" id="tab-5" data-month="5">5</button><button class="tab-btn" onclick="showMonth(6)" id="tab-6" data-month="6">6</button><button class="tab-btn" onclick="showMonth(7)" id="tab-7" data-month="7">7</button><button class="tab-btn" onclick="showMonth(8)" id="tab-8" data-month="8">8</button><button class="tab-btn" onclick="showMonth(9)" id="tab-9" data-month="9">9</button><button class="tab-btn" onclick="showMonth(10)" id="tab-10" data-month="10">10</button><button class="tab-btn" onclick="showMonth(11)" id="tab-11" data-month="11">11</button><button class="tab-btn" onclick="showMonth(12)" id="tab-12" data-month="12">12</button>
+</div>
+
+<!-- PRINT BUTTON -->
+
+<!-- ALL MONTHS -->
+
+    <div class="tab-content" id="month-1" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>One</em></div>
+            <div class="header-subtitle">Weeks 0 – 4</div>
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">30–60 min</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:20px;">6–8</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">8–10 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:20px;">8–12</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m1-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m1-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m1-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m1-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m1-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m1-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>No schedule yet — this is survival mode. Sleep happens in fragments around the clock and that's completely normal.</li>
+              <li>Cap any single nap at 2 hours during the day to help nudge night vs. day awareness. Keep nighttime feeds calm and dark.</li>
+              <li>Day/night confusion typically resolves by 6–8 weeks on its own. Bright days and quiet, dark nights will speed this along.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> You cannot create bad habits at this age. Hold, rock, feed to sleep — do whatever works. Foundation-building comes later.</div>
+        </div>
+
+        <div id="m1-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">Every 1.5–3 hrs around the clock (8–12 feeds/24 hrs). Stomachs are tiny — about the size of a marble at birth.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">Feed every 2–3 hrs overnight until back to birth weight. Do not let a newborn go more than 3–4 hrs without feeding.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Growth spurts at 1–2 weeks and 3 weeks — expect cluster feeding and increased fussiness for 2–3 days.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">6+ wet diapers/day after Day 5, 3–4 dirty diapers/day, steady weight gain after Day 4.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m1-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Holds head up briefly during tummy time</li><li>Moves arms and legs when awake</li><li>Opens hands briefly</li><li>Strong grasp reflex — grips your finger tightly</li><li>Turns head side to side when on tummy</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Calms when picked up or spoken to</li><li>Looks at your face intently</li><li>Reacts to loud sounds</li><li>Beginning to distinguish familiar voices</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Cries to communicate hunger, discomfort, tiredness</li><li>Makes sounds other than crying starting to emerge</li><li>Watches you as you move</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">Month 1 milestones are largely reflexive. Focus on feeding well, safe sleep, and skin-to-skin bonding. Every interaction is developmental.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m1-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Skin-to-Skin Time</div>
+          <div class="play-item-desc">Hold baby chest-to-chest as much as possible. Regulates temperature, heart rate, and stress hormones — for both of you.</div>
+          <div class="play-item-tag">Bonding · Regulation</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Face Gazing</div>
+          <div class="play-item-desc">Hold baby 8–12 inches from your face and make slow expressions. This is the perfect focal distance for newborn vision right now.</div>
+          <div class="play-item-tag">Visual · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Tummy Time on Chest</div>
+          <div class="play-item-desc">Lay baby tummy-down on your chest. Once ready for floor time, the Looker's high-contrast tummy time mat gives him something to focus on and lift toward.</div>
+          <div class="play-item-tag">Motor · Bonding</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">High-Contrast Cards (The Looker)</div>
+          <div class="play-item-desc">The Looker's black-and-white flash cards held 8–12 inches away are perfect for this — newborn vision is limited to high-contrast shapes right now.</div>
+          <div class="play-item-tag">Visual · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Talk & Narrate</div>
+          <div class="play-item-desc">Narrate everything — diaper changes, feeds, getting dressed. Your voice is their favorite sound right now.</div>
+          <div class="play-item-tag">Language · Bonding</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Gentle Massage</div>
+          <div class="play-item-desc">After bath, use light strokes on legs, arms, and tummy. Supports circulation and bonding.</div>
+          <div class="play-item-tag">Sensory · Bonding</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Keep all activities under 5 minutes. Newborns overstimulate instantly. The most developmental thing you can do is hold, talk to, and respond to your baby.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m1-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Tummy time starts day one</div>
+            <div class="toknow-desc">Begin tummy time from the first day home — even 1–2 minutes several times a day counts. It prevents flat head and builds the neck strength needed for every future milestone.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Talk, sing, and narrate constantly</div>
+            <div class="toknow-desc">Your voice is the most stimulating thing in his world right now. Narrate your day, sing anything, make eye contact. Language development starts here.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Safe sleep on every surface, every time</div>
+            <div class="toknow-desc">Back to sleep, firm flat surface, no soft bedding — every nap, every night, every caregiver. Room-share without bed-sharing per AAP guidelines.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">The witching hour is real (and temporary)</div>
+            <div class="toknow-desc">Most babies have intense, inconsolable fussiness in the late afternoon/evening (5–11 PM) — called the Period of PURPLE Crying. It starts around weeks 2–3, peaks at 6 weeks, and typically resolves by 3–4 months. It's not colic, not hunger, not pain — it's a normal developmental phase. Soothe with: dim lights, loud white noise, swaddle, skin-to-skin, motion. If nothing works, put baby safely in the crib and take a 10-minute break. Never shake a baby.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">1-month well visit</div>
+            <div class="toknow-desc">Weight check, length, head circumference, and physical exam. Your pediatrician will check healing (umbilical cord, circumcision if applicable), jaundice, feeding, and growth trajectory. A great time to voice any concerns. No vaccines at this visit — that comes at 2 months.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 1 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours) · La Leche League (llli.org)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-2" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Two</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">1–1.5 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:20px;">4–6</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">8–10 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:20px;">8–12</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m2-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m2-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m2-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m2-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m2-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m2-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Day/night confusion is resolving. You may start seeing a slightly longer stretch at night — 3–5 hours is a win at this age.</li>
+              <li>Naps are still wildly unpredictable (20 min to 2 hrs). Don't try to schedule them yet — watch wake windows and sleepy cues instead.</li>
+              <li>Bedtime is still late (8–10 PM is normal). An earlier bedtime will come naturally around 3–4 months as the circadian rhythm matures.</li>
+              <li><b>Witching hour peaks this month</b> — intense evening fussiness (5–11 PM) is at its worst around 6 weeks. This is the Period of PURPLE Crying: normal, developmental, and temporary. It resolves by 3–4 months. Dim lights, white noise, motion, and skin-to-skin are your best tools.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> Start a simple pre-sleep routine now — even just dim lights, a feed, and a song. Babies recognize patterns as early as 8 weeks.</div>
+        </div>
+
+        <div id="m2-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">Every 2–3 hrs during the day (8–12 feeds/24 hrs). Feedings may start to space out slightly as stomach capacity grows.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">1–3 night feeds still normal and expected. Some babies start a longer 4–5 hr stretch — a sign the circadian rhythm is developing.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">6-week growth spurt is significant — expect cluster feeding for 2–4 days. Very common around this time.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">6+ wet diapers/day, gaining ~1 oz/day, seems satisfied after feeds. Well visit at 2 months includes weight check.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m2-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Holds head up 45° during tummy time</li><li>Moves both arms and legs more symmetrically</li><li>Opens and shuts hands with more intention</li><li>Pushes up slightly when on tummy</li><li>Tracks moving objects with eyes (left to right)</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Social smile — smiles back when you smile and talk to him</li><li>Calms at the sound of a familiar voice</li><li>Recognizes your face at close range</li><li>Shows excitement with arm and leg movements</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Cooing sounds begin — soft vowel sounds (ooh, ahh)</li><li>Reacts to loud sounds by startling or looking</li><li>Makes sounds other than crying more frequently</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">The social smile is the big one this month — it's a true developmental milestone (CDC 2-month checklist). If you're not seeing it by 8 weeks, mention it at the next well visit.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m2-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Smile Back Games</div>
+          <div class="play-item-desc">When he smiles, smile back and make a sound. Pause and wait. You're teaching turn-taking — the foundation of all communication.</div>
+          <div class="play-item-tag">Social · Language</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Tummy Time with the Lovevery Ladybug</div>
+          <div class="play-item-desc">Place the Ladybug just out of reach — he'll lift his head to look at it. The Looker's wooden rattle also makes a great target: shake it slowly to encourage tracking.</div>
+          <div class="play-item-tag">Motor · Visual</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Lovevery Play Mat</div>
+          <div class="play-item-desc">Lay him on the play mat and let him bat at hanging toys. He's starting to make connections between his movements and results.</div>
+          <div class="play-item-tag">Motor · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Copy Cat Faces</div>
+          <div class="play-item-desc">Stick out your tongue, raise your eyebrows, open your mouth wide. Hold each expression and give him time to respond. He may try to mimic.</div>
+          <div class="play-item-tag">Social · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">High-Contrast Cards (The Looker)</div>
+          <div class="play-item-desc">Still very effective at 2 months — the Looker's black-and-white cards held 8–12 inches away, moved slowly side to side to build visual tracking.</div>
+          <div class="play-item-tag">Visual · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Narrated Walks</div>
+          <div class="play-item-desc">Walk through the house or outside, narrating everything you see. Fresh air, new sights, and your voice are all developmental gold.</div>
+          <div class="play-item-tag">Language · Sensory</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Sessions can extend to 5–10 minutes now. Watch for overstimulation — looking away, arching back, or fussiness means he needs a break.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m2-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Tummy time every wake window</div>
+            <div class="toknow-desc">Aim for 15–20 min total tummy time per day across multiple short sessions. Use the Lovevery Ladybug or your face as motivation. He should be lifting his head noticeably more this month.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Talk and copy his sounds</div>
+            <div class="toknow-desc">When he coos, coo back. Mirror his sounds and facial expressions. This back-and-forth is how language develops — long before actual words.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">2-month well visit</div>
+            <div class="toknow-desc">Includes first round of vaccines (DTaP, Hib, IPV, PCV, Rotavirus). Expect fussiness and low-grade fever for 24–48 hrs. Acetaminophen dosing per your pediatrician.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Respond to every cry</div>
+            <div class="toknow-desc">Still cannot self-soothe at this age. Responding quickly actually reduces crying over time — you're building secure attachment, not bad habits.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Watch for postpartum changes</div>
+            <div class="toknow-desc">6-week mark is when postpartum depression and anxiety often peak. Both parents can experience this. Edinburgh Postnatal Depression Scale is a standard screening tool — speak to your OB if anything feels off.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 2 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours) · La Leche League (llli.org)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-3" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Three</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">1.25–2 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:20px;">4–5</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–9 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:20px;">8–12</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m3-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m3-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m3-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m3-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m3-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m3-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Sleep is starting to consolidate. Some babies stretch to 4–6 hours overnight — follow hunger cues and don't wake a sleeping baby.</li>
+              <li>Naps are still unpredictable but should be capped at 2 hours each to protect night sleep and ensure daytime calories.</li>
+              <li>Bedtime is shifting earlier — many babies land between 7–9 PM depending on nap length and wake time. Watch for sleepy cues rather than chasing a fixed time.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Heads up:</b> The 4-month sleep regression is approaching. If sleep suddenly gets harder at the end of this month, that's likely why.</div>
+        </div>
+
+        <div id="m3-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">Every 2.5–4 hrs during the day (7–9 feeds/24 hrs). Feedings are becoming more efficient — sessions may get shorter but that's normal.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">1–2 night feeds are still normal and expected. Some babies start stretching to 5–6 hrs. Follow hunger cues, not the clock.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">A big growth spurt happens around 12 weeks — expect increased hunger, fussiness, and disrupted sleep for 2–5 days. Feed more frequently and ride it out.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">6+ wet diapers/day, steady weight gain, and a baby who seems satisfied after feeds.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m3-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Lifts head & chest during tummy time</li><li>Opens and shuts hands; brings hands to mouth</li><li>Swats at and begins to grasp dangling toys</li><li>Supports own head when held upright</li><li>Shows early signs of rolling — may shift weight or rock side to side (typically emerges 4–6 months)</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Smiles socially — recognizes and responds to familiar faces</li><li>Recognizes your voice; turns toward sound</li><li>Shows excitement with arm/leg movements</li><li>Cries differently for hunger vs. tired vs. discomfort</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Cooing and babbling sounds begin</li><li>Watches faces intently; mimics expressions</li><li>Responds to your voice with coos</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">Milestones are ranges, not deadlines. All of the above may emerge anytime during weeks 12–16. Mention any concerns to your pediatrician — never compare to other babies.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m3-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Tummy Time With the Lovevery Ladybug</div>
+          <div class="play-item-desc">Place the Ladybug just out of reach and let him lift toward it. Slowly move it side to side to build tracking and neck strength.</div>
+          <div class="play-item-tag">Motor · Visual</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Face-to-Face Conversations</div>
+          <div class="play-item-desc">Hold him at eye level, make a sound or expression, and pause. Watch him respond and take turns — this is how babies learn to communicate.</div>
+          <div class="play-item-tag">Language · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">High-Contrast Cards</div>
+          <div class="play-item-desc">Black-and-white patterns or bold shapes held 8–12 inches from his face. Move slowly side to side to build tracking and visual focus.</div>
+          <div class="play-item-tag">Visual · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">The Charmer Kit</div>
+          <div class="play-item-desc">This is the kit for this exact stage — the wooden rattle, rolling bell, hand-to-hand disc, and high-contrast cards are all matched to weeks 12–16. Introduce one at a time.</div>
+          <div class="play-item-tag">Fine Motor · Sensory</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Dance & Move</div>
+          <div class="play-item-desc">Hold him securely and sway, bounce gently, or move to music. Vestibular stimulation (movement awareness) is huge brain development right now.</div>
+          <div class="play-item-tag">Vestibular · Bonding</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Play Mat Kick & Bat</div>
+          <div class="play-item-desc">Lay him on the Lovevery play mat and let him bat and kick at the hanging toys. This builds cause-and-effect understanding.</div>
+          <div class="play-item-tag">Motor · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Mirror Play (The Charmer)</div>
+          <div class="play-item-desc">The Charmer's framed mirror is perfect for tummy time — prop it in front of him so he lifts his head to look at his own face. Babies this age are fascinated by faces.</div>
+          <div class="play-item-tag">Social · Visual</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Read & Narrate</div>
+          <div class="play-item-desc">Pick any board book with bold images. He doesn't understand the words yet — but your voice, rhythm, and face are doing important work.</div>
+          <div class="play-item-tag">Language · Bonding</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Keep it short. Babies this age overstimulate quickly. A few focused minutes beats a long session. Follow his cues — looking away or fussing means he's done.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m3-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Tummy time is non-negotiable</div>
+            <div class="toknow-desc">Aim for 15–30 min spread throughout the day (several short sessions). It builds neck, shoulder, and core strength needed for rolling, sitting, and crawling.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Talk constantly — it builds language</div>
+            <div class="toknow-desc">Narrate your day, repeat his sounds back, make eye contact when you talk. Every conversation now builds the language foundation he'll use for years.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Consistency is starting to matter</div>
+            <div class="toknow-desc">His circadian rhythm is beginning to develop. A consistent morning wake time and bedtime routine (even simple: bath, feed, dim lights, sleep) starts building healthy sleep habits now.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Swaddle transition is coming</div>
+            <div class="toknow-desc">Since he's showing rolling signs, swaddle must stop immediately. Arms-free sleep sack keeps him warm safely. AAP safe sleep: firm flat surface, on back, no loose items.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">The 4-month sleep regression is coming</div>
+            <div class="toknow-desc">Around weeks 14–18, sleep architecture permanently changes. He may wake more, fight naps, and seem extra fussy. It's normal — not a problem to fix.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 3 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-4" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Four</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">1.5–2 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:20px;">3–5</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:20px;">6–8</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m4-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m4-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m4-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m4-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m4-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m4-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>The 4-month regression is here. This is a permanent, biological shift to adult-like sleep cycles — not something you did wrong.</li>
+              <li>Babies now cycle through light sleep every 60–120 min and may fully wake between cycles. How they fall asleep at bedtime = how they'll need to fall back asleep overnight.</li>
+              <li>Naps may shorten to 20–30 min. Aim for a 7–8 PM bedtime — consistent routine, dark room, and sound machine are your best tools right now.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> Formal sleep training isn't recommended before 5 months, but practicing drowsy-but-awake at bedtime now builds the foundation.</div>
+        </div>
+
+        <div id="m4-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">Every 3–4 hrs during the day (6–8 feeds). Feedings are becoming more efficient — sessions may get shorter.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">1–2 night feeds still common. The 4-month regression may temporarily increase night waking — this is developmental, not hunger-driven.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Growth spurt around 4 months — increased hunger for a few days. Feed on demand during this time.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Weight gain slows slightly — about 0.5–1 oz/day now. Well visit at 4 months includes weight check.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m4-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Pushes up onto elbows/forearms during tummy time</li><li>Reaches for and bats objects with intention</li><li>Brings hands together at midline</li><li>Pushes down on legs when feet are placed on a firm surface</li><li>May show early rolling attempts — some babies roll tummy to back this month, but 6 months is the benchmark</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Smiles spontaneously to get your attention (CDC 4-month milestone)</li><li>Chuckles when you try to make him laugh</li><li>Looks at you and makes sounds to get attention</li><li>Recognizes familiar people from across the room</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Makes sounds back when you talk — back-and-forth cooing conversations</li><li>Turns head toward the sound of your voice</li><li>Looks at hands with interest — discovering his own body</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">The CDC 4-month checklist benchmarks: spontaneous smiling to get attention, chuckling, making sounds back when you talk. These are things 75%+ of babies do by this age.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m4-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Supported Sitting Practice</div>
+          <div class="play-item-desc">Prop him with a Boppy or your hands behind him. Brief sits build core strength. The Lovevery play mat is perfect underneath.</div>
+          <div class="play-item-tag">Motor · Core</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Roll Practice</div>
+          <div class="play-item-desc">From tummy time, dangle a toy to one side to encourage rolling. Celebrate every attempt — he's working hard.</div>
+          <div class="play-item-tag">Motor · Vestibular</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Charmer Grasping Toys</div>
+          <div class="play-item-desc">The Charmer's hand-to-hand disc and wooden rattle are built for exactly this — he's starting to intentionally reach, grab, and pass objects between hands.</div>
+          <div class="play-item-tag">Fine Motor · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Peek-a-Boo Begins</div>
+          <div class="play-item-desc">Cover your face with your hands, pause, then uncover. Even at this age he's starting to anticipate. Early object permanence.</div>
+          <div class="play-item-tag">Cognitive · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Bounce & Sing</div>
+          <div class="play-item-desc">Sit him on your lap facing you, hold him securely, and bounce gently to a song. Rhythmic movement and your voice together are deeply stimulating.</div>
+          <div class="play-item-tag">Vestibular · Language</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Texture Exploration</div>
+          <div class="play-item-desc">Let him feel the play mat textures, a cool smooth spoon, crinkly fabric. Brief sensory contact builds neural connections.</div>
+          <div class="play-item-tag">Sensory · Cognitive</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Wake windows are longer now — you have more time to play! But still watch for overstimulation. Fussiness at the end of a play session often means he's had enough, not that he's hungry.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m4-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Tummy time every day</div>
+            <div class="toknow-desc">He should be tolerating longer tummy time sessions now — aim for 20–30 min total per day. Use the Lovevery Ladybug and play mat to make it engaging.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Talk and read together daily</div>
+            <div class="toknow-desc">Read the same board books repeatedly — babies this age love repetition. Your animated voice and eye contact are the most stimulating play available.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">4-month regression is real and temporary</div>
+            <div class="toknow-desc">Sleep will likely get worse before it gets better. Consistent bedtime routine, age-appropriate wake windows, and patience are the only tools. It typically resolves in 2–6 weeks.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">4-month well visit this month</div>
+            <div class="toknow-desc">Includes second round of vaccines (DTaP, Hib, IPV, PCV, Rotavirus) and developmental screening. Good time to ask about sleep, feeding, and anything you've noticed.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">No solids yet</div>
+            <div class="toknow-desc">AAP recommends waiting until around 6 months. Introducing solids before 4 months is not recommended. Hold off regardless of pressure or fussiness.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 4 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-5" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Five</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">2–3 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:20px;">3–4</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:20px;">5–8</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m5-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m5-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m5-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m5-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m5-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m5-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Sleep cycles are maturing. Babies who can fall asleep independently at bedtime are more likely to link cycles overnight — the single biggest lever for longer nights.</li>
+              <li>Most babies take 3–4 naps, transitioning toward 3 as wake windows lengthen. Short naps (30–45 min) are still common and normal.</li>
+              <li>5 months is the earliest most experts recommend formal sleep training — only if you feel ready. No pressure or deadline.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> If naps are short, check wake windows first. Going down overtired is the #1 cause of 30-min naps at this age.</div>
+        </div>
+
+        <div id="m5-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">Every 3–4 hrs during the day (5–8 feeds). Feeding sessions are more efficient — some babies down to 5–6 feeds/day.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">Some babies start sleeping longer night stretches (5–8 hrs). Night feeds may drop to 0–1. Follow his hunger cues.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">5-month growth spurt may occur. Increased hunger for a few days is normal.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Continued steady weight gain. Any significant drop in wet diapers or weight concerns should be discussed with pediatrician.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m5-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Rolls both ways (tummy to back and back to tummy emerging)</li><li>Sits with significant support; tripod sitting beginning</li><li>Pushes up onto straight arms during tummy time</li><li>Reaches and transfers objects hand to hand</li><li>Puts everything in his mouth — this is developmental!</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Recognizes own name — starts to turn toward it</li><li>Laughs out loud</li><li>Shows clear preferences for familiar people</li><li>Enjoys social games like peek-a-boo</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Babbling with consonants beginning (ba, ma, da sounds)</li><li>Makes razzing/blowing sounds with lips</li><li>Vocalizes displeasure and excitement differently</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">Rolling both ways and laughing are the headline milestones. If rolling is only one direction, that's still in the normal range — both directions by 6 months is the CDC benchmark.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m5-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Rolling Practice</div>
+          <div class="play-item-desc">Place the Lovevery Ladybug to one side during tummy time to encourage rolling toward it. Celebrate each roll!</div>
+          <div class="play-item-tag">Motor · Vestibular</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Sitting with Lovevery Play Mat</div>
+          <div class="play-item-desc">Prop him in a supported sit on the play mat and place toys within reach. Brief supported sitting builds core strength.</div>
+          <div class="play-item-tag">Motor · Core</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Hand-to-Hand Transfer</div>
+          <div class="play-item-desc">Offer a toy to one hand, then see if he can pass it to the other. This cross-body coordination is a significant cognitive milestone.</div>
+          <div class="play-item-tag">Fine Motor · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Peekaboo</div>
+          <div class="play-item-desc">Now he'll anticipate the reveal! Full laughter is emerging — this game never gets old this month.</div>
+          <div class="play-item-tag">Cognitive · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">The Senser Kit</div>
+          <div class="play-item-desc">The Senser arrives this month — the Montessori ball, tissue pull box, and play socks are all designed for this stage of sensory exploration and hand-to-mouth discovery.</div>
+          <div class="play-item-tag">Sensory · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Outdoor Time</div>
+          <div class="play-item-desc">Time in a stroller or carrier outside — new sounds, sights, and stimulation. Narrate what you see.</div>
+          <div class="play-item-tag">Sensory · Language</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> He's more interactive and engaged than ever. Play sessions can extend to 15–20 minutes with the right toys. The Lovevery play kit is perfectly matched to this stage.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m5-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Tummy time and rolling practice daily</div>
+            <div class="toknow-desc">With rolling emerging, floor time is more important than ever. Minimize time in bouncers and swings — he needs the floor to build the strength for sitting and crawling.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Narrate and talk constantly</div>
+            <div class="toknow-desc">Babbling with consonants is starting. Respond to every sound he makes as if it's a real word — this back-and-forth builds language faster than anything else.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Start thinking about sleep independence</div>
+            <div class="toknow-desc">Now is a great window to begin practicing putting him down drowsy-but-awake. Not sleep training yet — just beginning to build the association.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Watch for readiness signs</div>
+            <div class="toknow-desc">AAP and CDC are clear: no solids before 6 months. This month, start watching for readiness cues — sits with support, strong head control, interested in watching you eat, tongue-thrust reflex fading.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Sitting is starting</div>
+            <div class="toknow-desc">Around 6–9 months, stranger anxiety peaks. Completely normal. Prepare caregivers — it's developmental, not a behavioral problem.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 5 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-6" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Six</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">2–3 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:20px;">2–3</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:20px;">5–7 + solids</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m6-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m6-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m6-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m6-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m6-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m6-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>By 6 months, many babies are physiologically capable of sleeping 6+ hour stretches without feeding — but 25–50% still wake overnight, which is also normal.</li>
+              <li>Most babies are on 3 semi-predictable naps. The third nap (catnap) often gets shorter and harder to achieve — a sign the 3→2 nap transition is on the horizon.</li>
+              <li>6 months is the most common time to begin sleep training if you choose to. AAP recommends placing baby drowsy-but-awake.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> Blackout curtains make a meaningful difference at this age. Light signals the brain to wake up — darkness protects naps and early mornings.</div>
+        </div>
+
+        <div id="m6-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">5–7 milk feeds/day plus 1–2 solid food introductions. Milk is still primary nutrition — solids are exploration at this stage.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">Many babies drop to 0–1 night feeds if sleep training has begun. Some still need 1 feed overnight — normal.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Solids introduction brings changes in diaper output (less frequent, different consistency). This is normal.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Start with 1–2 tablespoons once/day. Key foods: iron-rich single ingredients. Introduce peanut butter and egg early per AAP LEAP study guidelines.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m6-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Sits with minimal support; sits independently (briefly)</li><li>Rolls in both directions confidently</li><li>May begin getting up onto hands and knees (emerging — more common at 7–9 months)</li><li>Bears full weight on legs when held standing</li><li>Reaches with precise aim; rakes food toward self</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Knows familiar faces; shows shyness with strangers</li><li>Responds to own name consistently</li><li>Shows likes and dislikes clearly</li><li>Enjoys seeing himself in the mirror</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Babbles chains of consonants (bababababa, mamama)</li><li>Imitates sounds and facial expressions</li><li>Vocalizes back and forth in conversation</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">6-month well visit includes CDC developmental screening. Sitting with some support, rolling both ways, and babbling consonants are key benchmarks. Early allergen introduction (peanuts, eggs) is now recommended.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m6-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">High Chair Exploration</div>
+          <div class="play-item-desc">Introduce the high chair even before solids — it's a new vantage point and builds sitting strength. Place toys on the tray.</div>
+          <div class="play-item-tag">Motor · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">First Tastes</div>
+          <div class="play-item-desc">Start with single-ingredient purees or soft foods. Offer on a small spoon. Go slow — it's about exploration, not calories yet.</div>
+          <div class="play-item-tag">Feeding · Development</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Supported Standing</div>
+          <div class="play-item-desc">Hold him standing on your lap or a firm surface. He'll love bearing weight and bouncing. Builds leg strength for future walking.</div>
+          <div class="play-item-tag">Motor · Vestibular</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Cause & Effect Toys</div>
+          <div class="play-item-desc">From the Lovevery kit — toys that do something when he touches them. Pure cognitive development.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Peek-a-Boo with Objects</div>
+          <div class="play-item-desc">Hide a toy under a blanket — he may start to look for it. Object permanence developing.</div>
+          <div class="play-item-tag">Cognitive · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Water Play at Bath Time</div>
+          <div class="play-item-desc">Extended bath time with cups and toys. Deeply sensory and he's sitting well enough to enjoy it now.</div>
+          <div class="play-item-tag">Sensory · Motor</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Minimize time in bouncers, swings, and carriers during awake time. He needs the floor to practice sitting, rolling, and building toward crawling.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m6-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Start solids around 6 months</div>
+            <div class="toknow-desc">Look for readiness cues: sits with support, good head control, interest in food, tongue-thrust reflex fading. Start with single-ingredient foods — iron-rich foods first (pureed meat, iron-fortified oatmeal).</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Introduce allergens early</div>
+            <div class="toknow-desc">AAP recommends introducing peanut butter, eggs, and other top allergens early and repeatedly — at least 3x/week. This significantly reduces allergy risk. Introduce one at a time and watch for reactions.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">6-month well visit</div>
+            <div class="toknow-desc">Includes third vaccine series and developmental screening. Discuss solids plan, sleep, and any concerns.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Floor time over containers</div>
+            <div class="toknow-desc">He needs floor time to build strength for crawling. Limit bouncers, swings, and baby containers during wake windows.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Stranger anxiety is starting</div>
+            <div class="toknow-desc">Completely normal and a sign of healthy attachment. Prepare new caregivers that he may take longer to warm up.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 6 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours) · La Leche League (llli.org)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-7" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Seven</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">2.5–3.5 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:20px;">2–3</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">6:30–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:16px;">4–6 milk + 2–3 solids</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m7-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m7-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m7-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m7-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m7-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m7-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>The 3→2 nap transition typically begins between 7–9 months. Signs: consistently fighting the third nap, or taking it very late and struggling at bedtime.</li>
+              <li>When dropping the third nap, move bedtime earlier (as early as 6:00–6:30 PM) to avoid overtiredness during the adjustment — usually takes 2–4 weeks.</li>
+              <li>Sleep challenges between 7–10 months are common — driven by new mobility, teething, and separation anxiety, not regression in skills.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> Give plenty of daytime practice for new skills (rolling, sitting, crawling). Babies who practice during the day are less likely to rehearse at night. If you haven't sleep trained yet, 7 months is still a great window — most methods work well between 5–9 months.</div>
+        </div>
+
+        <div id="m7-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">4–6 milk feeds/day plus 2–3 solid meal attempts. Textures can start to thicken — mashed rather than smooth purees.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">0–1 night feeds if sleep is well-established. If still waking frequently, it's often habit rather than hunger at this age.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Appetite for solids increasing. Progress textures as he tolerates — from thin purees to thicker mashes.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Offering 2–3 tablespoons of food 2–3 times/day. Continue introducing variety. Milk remains primary nutrition until 12 months.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m7-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Sits independently without support for longer periods</li><li>Gets into all-fours position independently</li><li>May begin crawling (commando or traditional)</li><li>Pivots and scoots to reach things</li><li>Picks up small objects with raking grasp</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Shows clear stranger anxiety — may cry with unfamiliar people</li><li>Reaches for familiar people; resists strangers</li><li>Plays simple interactive games (pat-a-cake, peekaboo)</li><li>Looks for you when you leave the room</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Babbles with varying tone (sounds more like conversation)</li><li>Uses voice intentionally to get attention</li><li>Responds to 'no' — though won't comply yet!</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">Crawling timing varies enormously — some babies skip it entirely (CDC no longer requires crawling as a milestone). Focus on floor mobility in general.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m7-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Crawling Encouragement</div>
+          <div class="play-item-desc">Place a toy just out of reach during tummy time. Use the Lovevery Ladybug or a mirror to motivate movement toward a target.</div>
+          <div class="play-item-tag">Motor · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Object Permanence Box (The Inspector)</div>
+          <div class="play-item-desc">The Inspector's object permanence box is the standout toy for this stage — dropping a ball in and watching it reappear directly builds the understanding that things exist when hidden.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Stacking & Knocking Down</div>
+          <div class="play-item-desc">Stack soft blocks and let him knock them over. He'll love the cause-and-effect and you'll be rebuilding them forever.</div>
+          <div class="play-item-tag">Cognitive · Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Mirror Discovery</div>
+          <div class="play-item-desc">Baby-safe mirror during sitting play. He may start to understand the baby in the mirror is him.</div>
+          <div class="play-item-tag">Social · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Books with Textures & Flaps</div>
+          <div class="play-item-desc">He can now participate in reading — turning pages, touching textures, lifting flaps. A huge leap from passive listening.</div>
+          <div class="play-item-tag">Language · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Mealtime Exploration</div>
+          <div class="play-item-desc">Let him touch, smear, and explore food textures beyond just eating. Messy play at mealtime builds sensory tolerance.</div>
+          <div class="play-item-tag">Sensory · Feeding</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Baby-proofing becomes urgent this month. If he's not crawling yet, he will be soon. Get the floor-level view and remove hazards.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m7-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Baby-proof now</div>
+            <div class="toknow-desc">If he's not already mobile, he will be soon. Get low to the ground and look for hazards — outlets, cords, sharp furniture edges, small objects. Cabinet locks and baby gates are worth installing now.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Keep offering variety in solids</div>
+            <div class="toknow-desc">It can take 10–15 exposures before a baby accepts a new food. Don't give up. Keep offering rejected foods alongside accepted ones.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">3-to-2 nap transition may begin</div>
+            <div class="toknow-desc">Signs: fighting 3rd nap consistently, 3rd nap too short or too late. On transition days, move bedtime earlier. Don't force the transition — let him lead.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Stranger anxiety is normal and healthy</div>
+            <div class="toknow-desc">It may peak this month. Brief separation practice helps build confidence that you always return.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Talk, read, and sing more than ever</div>
+            <div class="toknow-desc">He's in a critical language window. The more words he hears in context, the larger his vocabulary will be.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 7 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-8" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Eight</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">2.5–3.5 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:26px;">2</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:16px;">4–5 milk + 3 solids</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m8-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m8-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m8-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m8-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m8-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m8-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Most babies drop to 2 naps between 8–9 months. Two solid naps of 60–120 min each is the goal; total daytime sleep of 2–3 hours supports 11–12 hours overnight.</li>
+              <li>Separation anxiety peaks around 8–10 months and is a common cause of new bedtime battles and night waking — even in babies who were sleeping well.</li>
+              <li>If baby is waking overnight and has strong independent sleep skills, check for teething, developmental leaps, and schedule fit before assuming hunger.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> A predictable goodbye ritual at bedtime (same words, same hug) helps reduce separation anxiety — consistency signals safety.</div>
+        </div>
+
+        <div id="m8-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">4–5 milk feeds/day plus 3 small solid meals. Progressing textures — soft finger foods he can feed himself.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">Many babies can sleep through without a feed at this age, though some may still need one overnight feed — both are normal.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Appetite for solids growing. Finger foods becoming more important. Offer soft pieces of what you're eating.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Self-feeding emerging. Offer soft finger foods at every meal. Continue allergen exposure 3x/week. No honey, no cow's milk as primary drink, no juice.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m8-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Crawling confidently (traditional or commando)</li><li>May begin pulling to standing using furniture (many babies do this at 9 months — wide range is normal)</li><li>Cruises along furniture holding on</li><li>Pincer grasp developing — picks up small pieces</li><li>Sits for extended periods without tipping</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Strong preference for primary caregivers</li><li>Separation anxiety may intensify</li><li>Waves bye-bye (some babies)</li><li>Participates in back-and-forth games enthusiastically</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Babbles with intent — sounds like real sentences in tone</li><li>May say 'mama' or 'dada' without meaning yet</li><li>Understands simple words ('no', his name, 'up')</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">Pincer grasp and pulling to stand are the headline motor milestones. The 9-month well visit (often around this time) includes CDC developmental screening.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m8-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Pull-to-Stand Encouragement</div>
+          <div class="play-item-desc">Place hands on a stable low surface (couch, ottoman) and let him pull up. Spot him closely — falls are part of learning.</div>
+          <div class="play-item-tag">Motor · Strength</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Pincer Grasp Practice</div>
+          <div class="play-item-desc">Small puffs, soft diced banana, or O-shaped cereals on the high chair tray. He'll work hard to pick them up.</div>
+          <div class="play-item-tag">Fine Motor · Feeding</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Object Permanence Games</div>
+          <div class="play-item-desc">Hide a toy completely under a blanket while he watches. Can he find it? This is a major cognitive milestone.</div>
+          <div class="play-item-tag">Cognitive · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Push Toys</div>
+          <div class="play-item-desc">Walkers and push toys (Lovevery has great options) help with cruising and building toward walking.</div>
+          <div class="play-item-tag">Motor · Vestibular</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Drip Drop Cups (The Inspector)</div>
+          <div class="play-item-desc">The Inspector's nesting Drip Drop cups are perfect here — stack, knock down, nest inside each other, and use in the bath. Spatial reasoning in action.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Music & Dancing</div>
+          <div class="play-item-desc">He can clap, bounce, and move to music now. Dance together, make sounds with instruments from the Lovevery kit.</div>
+          <div class="play-item-tag">Vestibular · Language</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> He's mobile now — floor play needs to be supervised and the environment needs to be safe. Let him lead his exploration. Your job is to spot him and narrate what he's doing.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m8-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Baby-proof the entire floor level</div>
+            <div class="toknow-desc">He's pulling to stand and cruising — everything at his level is now reachable. Secure furniture to walls, cover outlets, clear anything he could pull down.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">9-month well visit</div>
+            <div class="toknow-desc">Includes developmental screening, hemoglobin check, and possible flu shot. No major vaccine series this visit — a relatively easier appointment.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Separation anxiety is at its peak</div>
+            <div class="toknow-desc">Normal and healthy. Short separations with confident goodbyes work better than lingering. He needs to know you always come back.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Finger foods expand the menu</div>
+            <div class="toknow-desc">Soft pieces of banana, avocado, sweet potato, scrambled eggs, soft pasta. Everything should be easily squishable between your fingers before offering.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Sleep regressions around 8–10 months</div>
+            <div class="toknow-desc">Linked to major developmental leaps (crawling, pulling to stand). Brief and temporary — stay consistent with routine.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 8 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-9" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Nine</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">2.5–3.5 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:26px;">2</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:16px;">3–5 milk + 3 solids</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m9-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m9-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m9-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m9-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m9-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m9-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Two naps per day is the norm. Most babies sleep 11–12 hours overnight and 2–3 hours total across naps.</li>
+              <li>Sleep challenges (night waking, nap resistance) are still common at this age, typically tied to crawling, pulling to stand, teething, or separation anxiety.</li>
+              <li>If baby wakes early (before 6 AM), check: is the room dark enough? Is bedtime too late causing overtiredness? Is the morning wake window too short?</li>
+              <li>The 8–10 month sleep disruption is driven by developmental leaps — crawling, pulling to stand, object permanence — not regression. It's temporary. Maintain your routine and avoid introducing new sleep props if you can.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> Moving to a clock-based schedule (rather than purely wake windows) can add helpful predictability for both baby and caregivers.</div>
+        </div>
+
+        <div id="m9-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">3–5 milk feeds/day plus 3 solid meals. Sippy cup or open cup for water at meals. Solids becoming more substantial.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">Most babies don't need night feeds at this age. If still waking, it's typically habit.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Appetite for table foods increasing. Offer what the family is eating in safe, soft versions.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">3 meals/day plus 2 small snacks after 9 months per AAP. Continue milk as primary drink. No juice, no honey, no cow's milk as primary drink.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m9-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Pulls to stand confidently and gets back down</li><li>Cruises along furniture</li><li>May stand briefly without holding on</li><li>Pincer grasp refined — picks up very small objects</li><li>Crawls up stairs (watch closely!)</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Plays games like pat-a-cake and waves bye-bye</li><li>Looks for things he's seen you hide</li><li>Shows objects to you to share interest</li><li>Separation anxiety remains strong</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Babbles with sentence-like inflection</li><li>Understands simple commands ('come here', 'give me')</li><li>Responds to own name consistently</li><li>May say 'mama' or 'dada' with some meaning</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">9-month well visit is a major developmental screening point per AAP. 'Shows you things' and 'looks for hidden objects' are key cognitive benchmarks.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m9-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Supervised Stair Climbing</div>
+          <div class="play-item-desc">Supervised stair climbing is great motor work and will happen regardless — better to teach safely than ban it.</div>
+          <div class="play-item-tag">Motor · Vestibular</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Shape Sorter (The Explorer)</div>
+          <div class="play-item-desc">The Explorer arrives this month — even before he can match shapes, dropping objects into holes is deeply satisfying and builds spatial skills. Also includes wooden blocks for stacking.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Book Reading Together</div>
+          <div class="play-item-desc">He can now turn pages (board books), point at pictures, and vocalize responses. Make it interactive — 'where is the dog?'</div>
+          <div class="play-item-tag">Language · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">First Words Prep — Naming Everything</div>
+          <div class="play-item-desc">Point to and name everything in his environment all day long. Simple, clear words: 'cup', 'dog', 'ball', 'mama'.</div>
+          <div class="play-item-tag">Language · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Imitation Games</div>
+          <div class="play-item-desc">Clap, wave, bang a drum, shake a rattle — and wait for him to copy. Imitation is how babies learn virtually everything right now.</div>
+          <div class="play-item-tag">Social · Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Sensory Bin</div>
+          <div class="play-item-desc">Supervised water or sensory play builds sensory tolerance and hand strength.</div>
+          <div class="play-item-tag">Sensory · Fine Motor</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> He's actively problem-solving now. Give him slightly challenging toys and resist rushing to help. Letting him struggle briefly is how he learns.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m9-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Name everything, all day long</div>
+            <div class="toknow-desc">He's in a critical pre-language window. The number of words he hears now directly predicts vocabulary size at 18 months and reading ability at school age.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">9-month well visit — important screening</div>
+            <div class="toknow-desc">AAP recommends formal developmental screening at 9 months. Discuss any concerns about social engagement, communication, or motor development.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Gates on all stairs immediately</div>
+            <div class="toknow-desc">He can crawl up stairs but not down safely. Gates at top and bottom are essential.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Start transitioning to cup</div>
+            <div class="toknow-desc">Introduce a sippy or open cup for water at meals. AAP recommends transitioning away from bottles by 12–18 months. Earlier is easier.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Choking hazards become more critical</div>
+            <div class="toknow-desc">With finger foods increasing, review safe food sizes. Everything should be no bigger than a pea, or easily squished between your fingers.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 9 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-10" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Ten</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">3–4 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:26px;">2</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:16px;">3–4 milk + 3 solids</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m10-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m10-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m10-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m10-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m10-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m10-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Wake windows are lengthening to 3–4 hours. If naps are suddenly harder, try shifting them 15–30 min later before assuming a nap drop.</li>
+              <li>It's too early to drop to one nap — most babies aren't ready until 13–18 months. Dropping early leads to overtiredness and worse overall sleep.</li>
+              <li>Some babies experience renewed sleep disruptions at 10 months as they master walking and experience peaks in separation anxiety — temporary and normal.</li>
+              <li>If sleep was well-established and suddenly falls apart, revisit your bedtime routine before changing the schedule — consistency is the most powerful tool at this age per Huckleberry and TCB.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> If nap resistance starts, try lengthening wake windows by 15 min increments before making bigger schedule changes.</div>
+        </div>
+
+        <div id="m10-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">3–4 milk feeds/day (moving toward 3 milk servings). 3 solid meals plus 1–2 snacks. Table foods becoming the main event.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">No night feeds needed at this age physiologically. If still occurring, it's habit.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Appetite may fluctuate — normal at this age. Don't force eating. Offer variety and let him decide how much.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Finger foods expanding rapidly. Can handle soft pieces of most family foods. Keep offering water in a cup. No cow's milk as primary drink until 12 months.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m10-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Stands independently for a few seconds</li><li>May take first steps (range is 9–15 months — no rush)</li><li>Cruises confidently along furniture</li><li>Refined pincer grasp — picks up very small items</li><li>Claps hands together</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Waves bye-bye on cue</li><li>Plays alongside others (parallel play)</li><li>Shows empathy — may comfort others who are upset</li><li>Has clear favorite toys and activities</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Uses 'mama' and 'dada' with meaning</li><li>May say one other clear word</li><li>Points to get your attention or show you things</li><li>Understands 'no' and several other words</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">First steps can happen anywhere from 9–15 months — the CDC updated the milestone to 15 months. Don't stress if he's not walking at 10 months. Cruising and standing are right on track.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m10-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Push Walker Practice</div>
+          <div class="play-item-desc">If he's cruising, a push walker helps him feel confident taking steps. Stay close.</div>
+          <div class="play-item-tag">Motor · Vestibular</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Shape Sorters & Simple Puzzles</div>
+          <div class="play-item-desc">Lovevery has age-appropriate puzzles — single-piece knob puzzles are the right level. Problem-solving and fine motor in one.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Simple Pretend Play Begins</div>
+          <div class="play-item-desc">He may brush a doll's hair or pretend to eat from a toy spoon. Narrate and join in. Imagination is starting!</div>
+          <div class="play-item-tag">Cognitive · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Ball Play</div>
+          <div class="play-item-desc">Rolling, throwing (sort of), chasing — balls of all sizes are endlessly engaging. Great motor and cause-and-effect.</div>
+          <div class="play-item-tag">Motor · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Reading with Participation</div>
+          <div class="play-item-desc">Point to pictures and ask 'where is the ___?' He'll point back. Name everything on each page.</div>
+          <div class="play-item-tag">Language · Cognitive</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Sorting & Categorizing</div>
+          <div class="play-item-desc">Simple sorting activities from the Lovevery kit. Not about getting it right — about exposure to concepts.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Simple pretend play is beginning — join in and extend it. 'Oh you're feeding the baby? Is she hungry?' This kind of narration accelerates cognitive development.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m10-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Point to and name everything constantly</div>
+            <div class="toknow-desc">Pointing and naming is still the single most effective language intervention. Describe what he's touching, looking at, reaching for — in real time.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Don't rush walking</div>
+            <div class="toknow-desc">Cruising and pulling to stand is the right developmental stage. Walking ranges from 9–15 months (CDC updated benchmark).</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Shoes only when walking outside</div>
+            <div class="toknow-desc">Bare feet or soft-soled shoes indoors are best for foot and balance development.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Limit screen time</div>
+            <div class="toknow-desc">AAP recommends no screen time except video calls until 18–24 months. Screens during meals or play are particularly disruptive to language development.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Start thinking about 12-month transition</div>
+            <div class="toknow-desc">At 12 months: whole cow's milk, dropping bottles, more table foods, and possibly starting to think about eventual 2-to-1 nap transition (though most babies stay on 2 until 14–18 months).</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 10 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-11" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Eleven</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">3–4 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:26px;">2</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:16px;">3–4 milk + 3 solids</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m11-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m11-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m11-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m11-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m11-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m11-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Two naps remain appropriate. Some babies start resisting one nap — this is often a wake window issue, not true nap readiness. Try longer wake windows first.</li>
+              <li>Sleep is generally more stable now. Disruptions are usually tied to teething (molars), new walking skills, or illness rather than developmental regressions.</li>
+              <li>Consistent bedtime routine is more important than ever as language and awareness develop — predictability reduces resistance and anxiety around sleep.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> If naps are suddenly shorter, check total sleep. Some babies at this age genuinely need slightly less daytime sleep as overnight sleep consolidates.</div>
+        </div>
+
+        <div id="m11-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">3–4 milk feeds/day (preparing to transition to cow's milk at 12 months). 3 meals + 2 snacks. Table foods primary.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">No physiological need for night feeds. If still occurring, it's habit.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Appetite may spike before the 12-month birthday as he practices walking and expends more energy.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Soft table foods of almost anything the family eats. Avoid choking hazards (hard raw vegetables, whole grapes, hot dogs, large chunks). No honey until 12 months.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m11-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>Walks while holding one hand</li><li>Stands alone briefly and with more confidence</li><li>Stoops to pick things up while standing</li><li>Releases objects deliberately</li><li>Climbs onto low furniture</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Repeats actions that get laughs or attention</li><li>Offers toys to others — sharing emerging</li><li>Shows affection with cuddles and kisses</li><li>Tests limits — does things you said 'no' to and watches your face</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>1–3 clear, intentional words (mama, dada, and one more)</li><li>Understands many more words than he can say</li><li>Points to request things and share interest</li><li>Uses gestures (shaking head 'no', reaching up to be held)</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">By 12 months, the CDC expects at least one clear word beyond mama/dada, waving bye-bye, and pointing to show things. This month is great prep — encourage those skills actively.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m11-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Walking Practice</div>
+          <div class="play-item-desc">Walking along furniture and holding one hand. Don't rush to let go — let him initiate. Your job is to be close and encouraging.</div>
+          <div class="play-item-tag">Motor · Confidence</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Nesting & Stacking</div>
+          <div class="play-item-desc">Nesting cups, stacking rings — he can now put in AND take out, stack AND knock down. Spatial reasoning in action.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Simple Pretend Sequences</div>
+          <div class="play-item-desc">Feed the teddy bear, then put him to bed, then give him a kiss. Extend the narrative with him.</div>
+          <div class="play-item-tag">Cognitive · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Ball Games with Rules</div>
+          <div class="play-item-desc">Simple 'roll it to me' back-and-forth. He's starting to understand game structure.</div>
+          <div class="play-item-tag">Motor · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Music & Instruments</div>
+          <div class="play-item-desc">From the Lovevery kit — banging, shaking, making music. Rhythm and music directly support language development.</div>
+          <div class="play-item-tag">Language · Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Emotion Books</div>
+          <div class="play-item-desc">Name feelings when you see them in pictures and real life. Building emotional vocabulary early matters.</div>
+          <div class="play-item-tag">Language · Social</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> He's testing limits now — that's healthy and developmental. Give him safe 'yes' spaces where he can explore freely. Redirection works better than repeated 'no' at this age.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m11-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Prep for 12-month transition</div>
+            <div class="toknow-desc">At 12 months: switch from formula to whole cow's milk (if not breastfeeding), transition away from bottles, and start offering more whole table foods.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Encourage pointing and gestures</div>
+            <div class="toknow-desc">Point to things and name them, wave bye-bye with enthusiasm, shake head 'no'. He's learning that gestures communicate — and this directly predicts language development.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Limit wheeled walker usage</div>
+            <div class="toknow-desc">Wheeled baby walkers can delay walking by allowing a different movement pattern. Push walkers (where he pushes from behind) are fine.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Tantrum awareness</div>
+            <div class="toknow-desc">Mini-tantrums can begin this month — he has big feelings and no words for them yet. Stay calm, offer empathy, and redirect.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Birthday planning tip</div>
+            <div class="toknow-desc">First birthday parties are for the parents — he won't remember it. Know that his sleep and routine matter more than any party detail.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 11 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="month-12" style="display:none;">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="month-label">Baby Reference Guide</div>
+            <div class="header-title">Month <em>Twelve</em></div>
+            
+          </div>
+          <button class="print-btn" onclick="printMonth()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-label">At a Glance</div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div class="stat-value" style="font-size:20px;">3.25–4 hr</div>
+          <div class="stat-label">Wake Window</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">😴</div>
+          <div class="stat-value" style="font-size:26px;">2</div>
+          <div class="stat-label">Naps / Day</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌛</div>
+          <div class="stat-value" style="font-size:20px;">7–8 PM</div>
+          <div class="stat-label">Bedtime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍼</div>
+          <div class="stat-value" style="font-size:16px;">3 milk + 3 solids</div>
+          <div class="stat-label">Feeds / Day</div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+        <div class="stats-label jump-nav-header" style="margin-bottom:10px;">Jump to</div>
+        <nav class="jump-nav">
+          <a href="javascript:void(0)" onclick="jumpTo('m12-sleep')">💤 Sleep</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m12-feeding')">🍼 Feeding</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m12-milestones')">🌱 Milestones</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m12-play')">🎈 Play</a>
+          <a href="javascript:void(0)" onclick="jumpTo('m12-toknow')">💡 Things to Know</a>
+        </nav>
+
+      <hr class="section-divider">
+      <!-- MAIN GRID -->
+      <div class="main-grid">
+
+        <!-- SLEEP -->
+        <div id="m12-sleep" class="card card-sleep full-width">
+          <div class="card-header">
+            <div class="card-icon icon-sleep">💤</div>
+            <div class="card-title">Sleep</div>
+          </div>
+          <ul class="sleep-bullets">
+              <li>Two naps is still appropriate for most 12 month olds despite what daycare may do. The 2→1 nap transition doesn't typically happen until 13–18 months.</li>
+              <li>Nap resistance at 12 months is common and often reflects the need for longer wake windows (try 3.25–4 hours), not dropping a nap.</li>
+              <li>Separation anxiety may resurface as walking and independence develop — a consistent, calm bedtime routine is the most effective tool.</li>
+            </ul>
+            <div class="sleep-tip">💡 <b>Tip:</b> If naps suddenly go sideways this month, lengthen wake windows before dropping a nap — dropping too early causes overtiredness that makes everything harder.</div>
+        </div>
+
+        <div id="m12-feeding" class="card card-feeding full-width">
+          <div class="card-header">
+            <div class="card-icon icon-feeding">🍼</div>
+            <div class="card-title">Feeding</div>
+          </div>
+          <div class="feeding-grid-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🕐</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Frequency</div>
+                <div class="feeding-item-desc">Transition to whole cow's milk at 12 months (if not breastfeeding): 16–24 oz/day. 3 meals + 2 snacks. Milk is a supplement to solid foods now.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">🌙</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Night Feeds</div>
+                <div class="feeding-item-desc">No night feeds needed. Sleep through the night is developmentally achievable and appropriate.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">📈</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Growth Spurts</div>
+                <div class="feeding-item-desc">Appetite may be variable as growth rate slows. Don't panic if he eats less some days — normal.</div>
+              </div>
+            </div>
+            <div class="feeding-item">
+              <div class="feeding-item-icon">✅</div>
+              <div class="feeding-item-text">
+                <div class="feeding-item-title">Good Signs</div>
+                <div class="feeding-item-desc">Transition from bottles to cups by 12–18 months. Whole milk replaces formula. Introduce whole egg, nut butters, soft cheeses freely.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONES -->
+        <div id="m12-milestones" class="card card-milestones full-width">
+          <div class="card-header">
+            <div class="card-icon icon-milestones">🌱</div>
+            <div class="card-title">Developmental Milestones</div>
+          </div>
+          <div class="milestone-columns">
+            <div>
+              <div class="milestone-cat-label">Motor</div>
+              <ul class="milestone-list"><li>May take first independent steps (range is 9–15 months)</li><li>Stands alone steadily</li><li>Stoops and recovers from standing</li><li>Throws a ball underhand</li><li>Climbs and descends from low furniture</li></ul>
+            </div>
+            <div>
+              <div class="milestone-cat-label">Social &amp; Emotional</div>
+              <ul class="milestone-list"><li>Plays games and follows simple rules with you</li><li>Shows affection openly — kisses, hugs, pats</li><li>Uses gestures to communicate (pointing, waving, shaking head)</li><li>Separation anxiety may resurge around the birthday</li></ul>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="milestone-cat-label">Communication</div>
+            <ul class="milestone-list"><li>Says 1–3 words clearly and intentionally beyond mama/dada</li><li>Points to objects to share interest (not just to request)</li><li>Waves bye-bye on cue</li><li>Follows simple one-step instructions ('give me the ball')</li></ul>
+          </div>
+          <div class="milestone-note" style="margin-top:14px;">12-month well visit is a major milestone. CDC expects: at least 1 word beyond mama/dada, waves bye-bye, points to show things. If concerned about any of these, mention at the visit.</div>
+        </div>
+
+        <!-- PLAY -->
+        <div id="m12-play" class="card card-play full-width">
+          <div class="card-header">
+            <div class="card-icon icon-play">🎈</div>
+            <div class="card-title">Play Ideas This Month</div>
+          </div>
+          <div class="play-grid">
+        <div class="play-item">
+          <div class="play-item-title">Walking Encouragement</div>
+          <div class="play-item-desc">Put interesting toys across the room. Kneel at his level and call him. Clap and celebrate every step. Keep sessions playful — not pressured.</div>
+          <div class="play-item-tag">Motor · Confidence</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Lovevery Shape Sorters & Puzzles</div>
+          <div class="play-item-desc">He can now complete simple tasks more successfully. Mastery feels amazing to him — you'll see the pride on his face.</div>
+          <div class="play-item-tag">Cognitive · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Pretend Play Kitchen/Food</div>
+          <div class="play-item-desc">Feeding, cooking, pouring. Simple domestic pretend play is deeply engaging and builds imagination and language.</div>
+          <div class="play-item-tag">Cognitive · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">Ball Play — Kicking</div>
+          <div class="play-item-desc">Kicking a ball is starting. Roll it, let him kick it back. Simple but builds coordination.</div>
+          <div class="play-item-tag">Motor · Social</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">First Art — Crayons & Paint</div>
+          <div class="play-item-desc">Fat crayons and non-toxic finger paint. He'll scribble and smear. It's all about the sensory experience and mark-making.</div>
+          <div class="play-item-tag">Sensory · Fine Motor</div>
+        </div>
+        <div class="play-item">
+          <div class="play-item-title">'Where Is ___?' Books</div>
+          <div class="play-item-desc">Ask him to point to objects in books. Start with simple board books he knows well.</div>
+          <div class="play-item-tag">Language · Cognitive</div>
+        </div></div>
+          <div style="margin-top:14px;font-size:16px;color:var(--mid-gray);font-style:italic;line-height:1.6;background:var(--golden-pale);padding:10px 14px;border-radius:8px;">
+            💡 <strong>Keep in mind:</strong> Happy first birthday! Year one is complete. This month is a celebration of how far he's come — from a reflexive newborn to a curious, communicating, almost-walking little person. Keep following his lead.
+          </div>
+        </div>
+
+        <!-- THINGS TO KNOW -->
+        <div id="m12-toknow" class="card card-toknow full-width">
+          <div class="card-header">
+            <div class="card-icon icon-toknow">💡</div>
+            <div class="card-title">Things to Know This Month</div>
+          </div>
+          <div class="toknow-list">
+        <div class="toknow-item">
+          <div class="toknow-num">1</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Whole cow's milk replaces formula at 12 months</div>
+            <div class="toknow-desc">If not breastfeeding, transition to whole (not skim or 2%) cow's milk: 16–24 oz/day. Introduce gradually — mix with formula to ease transition.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">2</div>
+          <div class="toknow-text">
+            <div class="toknow-title">12-month well visit — major milestone</div>
+            <div class="toknow-desc">Vaccines: MMR, Varicella, Hep A (first dose), Hib, PCV boosters. Developmental screening for autism and general development. Hearing screen.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">3</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Begin bottle weaning</div>
+            <div class="toknow-desc">AAP recommends transitioning away from bottles by 12–18 months. Start replacing bottle feeds with cup feeds. Bedtime bottle is typically last to go.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">4</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Walking range is 9–15 months</div>
+            <div class="toknow-desc">If he's not walking independently yet, that's completely within normal range. CDC updated the milestone to 15 months.</div>
+          </div>
+        </div>
+        <div class="toknow-item">
+          <div class="toknow-num">5</div>
+          <div class="toknow-text">
+            <div class="toknow-title">Language explosion is coming</div>
+            <div class="toknow-desc">Between 12–18 months, vocabulary can jump dramatically. The groundwork you've laid all year is about to pay off.</div>
+          </div>
+        </div></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+            <div class="footer">
+        <div class="footer-left">
+          <div style="font-size:13px;font-weight:600;color:var(--sage);margin-bottom:6px;">Month 12 of 12</div>
+          Sources: AAP (healthychildren.org) · CDC Learn the Signs, Act Early · Huckleberry Care · Taking Cara Babies · KidsHealth (Nemours)<br>
+          This guide is a reference — always follow your pediatrician's guidance for your specific baby.
+        </div>
+      </div>
+    </div>
+
+<script>
+
+  // Jump to section with offset for sticky tab bar
+  function jumpTo(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var isMobile = window.innerWidth <= 600;
+    var offset = isMobile ? 16 : (document.querySelector('.tab-bar').offsetHeight + 12);
+    var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  // Auto-hide tab bar on scroll (mobile only)
+  let lastScrollY = 0;
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (window.innerWidth > 600) return;
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        const tabBar = document.querySelector('.tab-bar');
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 80) {
+          tabBar.classList.add('hidden');
+        } else {
+          tabBar.classList.remove('hidden');
+        }
+        lastScrollY = currentScrollY;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  function showMonth(num) {
+    document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    var target = document.getElementById('month-' + num);
+    var btn = document.getElementById('tab-' + num);
+    if (target) target.style.display = 'block';
+    if (btn) btn.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+  // Show month 1 on load
+  function printMonth() {
+    var activeBtn = document.querySelector('.tab-btn.active');
+    if (!activeBtn) return;
+    var num = parseInt(activeBtn.getAttribute('data-month'));
+    var monthEl = document.getElementById('month-' + num);
+    if (!monthEl) return;
+
+    var monthNames = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve'];
+    var monthName = monthNames[num - 1] || num;
+    var docTitle = 'Baby Reference Guide - Month ' + num;
+
+    // Get all CSS from the page
+    var css = document.querySelector('style').innerHTML;
+
+    // Build a clean single-month HTML document
+    var html = '<!DOCTYPE html><html><head>'
+      + '<meta charset="UTF-8">'
+      + '<title>' + docTitle + '</title>'
+      + '<link rel="preconnect" href="https://fonts.googleapis.com">'
+      + '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+      + '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">'
+      + '<style>' + css + '</style>'
+      + '<style>'
+      + '@page { size: letter portrait; margin: 0.75in 0.7in 0.7in 0.7in; }'
+      + 'body { background: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; margin: 0 !important; padding: 36pt 40pt 32pt 40pt !important; box-sizing: border-box; }'
+      + '.tab-bar, .jump-nav, .jump-nav-header, .print-btn, .section-divider { display: none !important; }'
+      + '.tab-content { display: block !important; padding: 0 !important; }'
+      + '.header { padding: 0 0 10pt 0 !important; background: white !important; }'
+      + '.header-top { padding-bottom: 6pt !important; }'
+      + '.month-label { font-size: 8pt !important; }'
+      + '.header-title { font-size: 24pt !important; margin-bottom: 2pt !important; }'
+      + '.header-subtitle { font-size: 10pt !important; }'
+      + '.stats-label { font-size: 8pt !important; margin: 10pt 0 6pt 0 !important; }'
+      + '.stats-bar { grid-template-columns: repeat(4,1fr) !important; gap: 6pt !important; margin-bottom: 12pt !important; }'
+      + '.stat-card { padding: 7pt 5pt !important; border-radius: 6pt !important; }'
+      + '.stat-icon { font-size: 14pt !important; margin-bottom: 3pt !important; }'
+      + '.stat-value { font-size: 13pt !important; }'
+      + '.stat-label { font-size: 6.5pt !important; }'
+      + '.main-grid { gap: 10pt !important; }'
+      + '.card { padding: 10pt !important; border-radius: 6pt !important; break-inside: avoid; page-break-inside: avoid; }'
+      + '.card-header { margin-bottom: 6pt !important; }'
+      + '.card-title { font-size: 8pt !important; }'
+      + '.card-icon { width: 24pt !important; height: 24pt !important; font-size: 13pt !important; border-radius: 6pt !important; }'
+      + '.sleep-bullets { gap: 5pt !important; }'
+      + '.sleep-bullets li { font-size: 9.5pt !important; line-height: 1.4 !important; }'
+      + '.sleep-tip { font-size: 9pt !important; padding: 6pt 9pt !important; }'
+      + '.feeding-grid-2col { grid-template-columns: 1fr 1fr !important; gap: 7pt !important; }'
+      + '.feeding-item { padding: 7pt !important; }'
+      + '.feeding-item-title { font-size: 9.5pt !important; }'
+      + '.feeding-item-desc { font-size: 9pt !important; }'
+      + '.milestone-columns { grid-template-columns: 1fr 1fr !important; gap: 8pt 18pt !important; }'
+      + '.milestone-cat-label { font-size: 7pt !important; }'
+      + '.milestone-list li { font-size: 9pt !important; }'
+      + '.milestone-note { font-size: 8.5pt !important; }'
+      + '.play-grid { grid-template-columns: 1fr 1fr !important; gap: 7pt !important; }'
+      + '.play-item { padding: 7pt !important; }'
+      + '.play-item-title { font-size: 9.5pt !important; }'
+      + '.play-item-desc { font-size: 9pt !important; }'
+      + '.play-item-tag { font-size: 6.5pt !important; }'
+      + '.play-tip { font-size: 9pt !important; padding: 6pt 9pt !important; }'
+      + '.toknow-list { gap: 7pt !important; }'
+      + '.toknow-num { font-size: 9pt !important; width: 18pt !important; height: 18pt !important; min-width: 18pt !important; }'
+      + '.toknow-title { font-size: 9.5pt !important; }'
+      + '.toknow-desc { font-size: 9pt !important; }'
+      + '.footer { margin-top: 8pt !important; padding-top: 6pt !important; }'
+      + '.footer-left { font-size: 7pt !important; }'
+      + '</style>'
+      + '</head><body>'
+      + monthEl.outerHTML
+      + '<script>document.title = "' + docTitle + '"; window.onload = function() { window.print(); }<\/script>'
+      + '</body></html>';
+
+    var win = window.open('', '_blank');
+    win.document.write(html);
+    win.document.close();
+  }
+
+
+  // Welcome banner
+  function dismissBanner() {
+    var banner = document.getElementById('welcome-banner');
+    if (banner) banner.style.display = 'none';
+    try { localStorage.setItem('babyhq_banner_dismissed', '1'); } catch(e) {}
+  }
+  function initBanner() {
+    try {
+      if (localStorage.getItem('babyhq_banner_dismissed') === '1') {
+        var banner = document.getElementById('welcome-banner');
+        if (banner) banner.style.display = 'none';
+      }
+    } catch(e) {}
+  }
+  initBanner();
+
+  function initDashboard() {
+    showMonth(1);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDashboard);
+  } else {
+    initDashboard();
+  }
+
+</script>
+</body>
+</html>
